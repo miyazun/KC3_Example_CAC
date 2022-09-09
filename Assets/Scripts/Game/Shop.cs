@@ -18,6 +18,8 @@ public class Shop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //button.onClick.AsObservable().First()
+        //.Subscribe(l => Debug.Log(money.money.Value));
 
 
     }
