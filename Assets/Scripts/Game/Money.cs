@@ -17,6 +17,11 @@ public class Money : MonoBehaviour
         saving.Value += salary;
     }
 
+    public void UpSalary(int num)
+    {
+        salary += num;
+    }
+
     public void Decrease(int num)
     {
         saving.Value -= num;

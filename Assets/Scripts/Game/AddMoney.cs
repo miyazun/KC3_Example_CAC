@@ -14,16 +14,9 @@ public class AddMoney : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {  
-        int a = 0;
+    {
         button.onClick.AsObservable()
         .ThrottleFirst(TimeSpan.FromSeconds(0.5f))
         .Subscribe(_ => money.GetMoney()).AddTo(this);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
